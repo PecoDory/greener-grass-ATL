@@ -20,7 +20,7 @@
 ## Purpose
 <br>
 
-This is a fullstack application that will allow users to post their day-to-day exploits as urban gardeners/farmers in Atlanta, as well as allow other users to comment on these posts, fostering a dialogue between local growers. 
+This is a fullstack application that will allow users to post their day-to-day exploits as urban gardeners/farmers in Atlanta, as well as allow other users to comment on these posts, fostering a dialogue (tips, tricks, glass content in the soil) between local growers. 
 <br>
 
 ## MVP
