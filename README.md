@@ -26,13 +26,13 @@
 ## Purpose
 <br>
 
-This is a fullstack application that will allow users to post their day-to-day exploits as urban gardeners/farmers in Atlanta, as well as allow other users to comment on these posts, fostering a dialogue (tips, tricks, glass content in the soil) between local growers. 
+This is a fullstack application that will allow users to post their day-to-day exploits as urban gardeners/farmers in Atlanta, as well as allow other users to comment on these posts, fostering a dialogue (tips, tricks, glass content in the soil) between local growers.  
 <br>
 
 ## MVP
 
 - Sign Up/Login
-- A place to post about yr daily routine and the nature of growing in the city wilds
+- A place to post about yr daily routine and the nature of growing and foraging in the city wilds
 - Comments from other users relating their experiences of the day
 - A fitting aesthetic for the content
 
@@ -46,35 +46,34 @@ This is a fullstack application that will allow users to post their day-to-day e
 
 <br>
 
-### Front-End Client 
+### Client 
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
+- Landing
 
-![Dummy Link](url)
+![alt text](https://i.imgur.com/eSSQuWu.png)
 
-- Desktop Landing
+-Logged in Landing
 
-![Dummy Link](url)
+![alt text](https://i.imgur.com/Ehm4ul4.png)
 
-- Desktop Hero
+- Post Page 
 
-![Dummy Link](url)
+![alt text](https://i.imgur.com/3kq1lmE.png)
 
-- Resource Index
+- View All Posts
 
-![Dummy Link](url)
+![alt text](https://i.imgur.com/J9TBsAb.png)
 
-- Resource Show
+- Edit/Delete
 
-![Dummy Link](url)
+![alt text](https://i.imgur.com/1G8N5SG.png)
 
-- Tablet Resource Index
+- Comment
 
-![Dummy Link](url)
+![alt text](https://i.imgur.com/YLi0Gmq.png)
 
-- Mobile Resource Index
 
 #### Component Tree
 
@@ -93,28 +92,36 @@ src
       |__ fonts
       |__ graphics
       |__ images
-      |__ mockups
 |__ components/
       |__ Header.jsx
+      |__ Footer.jsx
+|__ screens
+      |__CreatePost.jsx
+      |__EditPost.jsx
+      |__DeletePost.jsx
+      |__ViewAllPost.jsx
+      |__PostDetail.jsx
 |__ services/
 
 ```
 
-#### Time Estimates
+## Project Timetable
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
+|          | Reviewing/Studying    | General                       | Coding       | Styling           | Total Hours Day | Total Hours Days |
+| -------- | --------------------- | -----------------------------| ------------ | ----------------- | --------------- | ---------------- |
+| May 7    | 4 hours               | 2 hours                      | 3 hours      | 0.5 hour(initial) | 9.5             | 9.5              |
+| May 8    | 1 hour                | 1 hour                       | 5 hours      | 1 hour            | 8               | 17.5             |
+| May 9    | 1 hours(review)       | 1 hour                       | 6 hours      | 1.5 hours         | 8.5             | 26               |
+| May 10   | 0                     | 1 hour                       | 6 hours      | 1.5 hours         | 8.5             | 34.5             |
+| May 11   | 0                     | 1 hour                       | 4 hours      | 4 hours           | 9               | 43.5             |
+| May 12   | 0                     | 1 hour                       | 5 hours      | 2 hours           | 8               | 51.5             |
+| May 13   | 0                     | 1 hour                       | 4 hours      | 3 hours           | 8               | 59.5             |
+| May 14   | PRESENTATION          | PRES DAY                     | PRES DAY     | PRES DAY          | PRES DAY        | PRES DAY         |
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
-### Server (Back End)
+### Server
 
 #### ERD Model
 
