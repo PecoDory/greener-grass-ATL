@@ -83,8 +83,6 @@ This is a fullstack application that will allow users to post their day-to-day e
 
 #### Component Architecture
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
-
 ``` 
 
 src
@@ -96,6 +94,8 @@ src
       |__ Header.jsx
       |__ Footer.jsx
 |__ screens
+      |__Home.jsx
+      |__SignInUp.jsx
       |__CreatePost.jsx
       |__EditPost.jsx
       |__DeletePost.jsx
