@@ -12,10 +12,10 @@
 - [Post-MVP](#post-mvp)
 
 <br>
+![alt text](https://i.pinimg.com/originals/d2/e9/5f/d2e95f54788f932b61296561d8ef6343.jpg)
+
 
 ## Purpose
-
-***greener grass ATL*** 
 <br>
 
 This is a fullstack application that will allow users to post their day-to-day exploits as urban gardeners/farmers in Atlanta, as well as allow other users to comment on these posts, fostering a dialogue between local growers. 
