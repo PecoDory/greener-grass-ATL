@@ -31,37 +31,22 @@ This is a fullstack application that will allow users to post their day-to-day e
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
-
-<br>
-
-### Goals
-
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- Sign Up/Login
+- A place to post about yr daily routine and the nature of growing in the city wilds
+- Comments from other users relating their experiences of the day
+- A fitting aesthetic for the content
 
 <br>
 
-### Libraries and Dependencies
+### Post-MVP
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+- A way to visually map the locations of gardens and food forests in Atlanta (if a user is so inclined to disclose this info, or if it is public)
+- A quick-guide to what grows best in our zone that can be edited by users
+- A field-guide for foraging connected to an identification app
 
 <br>
 
-### Client (Front End)
+### Front-End Client 
 
 #### Wireframes
 
@@ -101,7 +86,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
-``` structure
+``` 
 
 src
 |__ assets/
