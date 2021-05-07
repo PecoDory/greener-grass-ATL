@@ -11,12 +11,12 @@
 - [MVP](#mvp)
   - [Goals](#goals)
   - [Libraries and Dependencies](#libraries-and-dependencies)
-  - [Client](#client-front-end)
+  - [Client](#client)
     - [Wireframes](#wireframes)
     - [Component Tree](#component-tree)
     - [Component Architecture](#component-architecture)
     - [Time Estimates](#time-estimates)
-  - [Server](#server-back-end)
+  - [Server](#server)
     - [ERD Model](#erd-model)
 
 
