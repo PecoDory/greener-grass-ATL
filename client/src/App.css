@@ -1,10 +1,10 @@
-.App {
-  text-align: center;
+*{
+text-decoration: none;
+background-color: #C4F1BE;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Greener Grass",
+  "name": "Greener Grass ATL",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://assets.onlinelabels.com/images/clip-art/dominiquechappard/eco%20green%20leaf%20icon-170142.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "https://cdn0.iconfinder.com/data/icons/entypo/94/leaf3-512.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "https://cdn0.iconfinder.com/data/icons/entypo/94/leaf3-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

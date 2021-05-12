@@ -22,13 +22,10 @@ function SignUp() {
     <div>
       <h1>Sign Up</h1>
       <form onChange={handleChange} onSubmit={handleSubmit}>
-        <label>Email</label>
-        <input name="email" type="email" />
-        <label>Password</label>
-        <input name="password" type="password" />
-        <label>Password Confirmation</label>
-        <input name="password_confirmation" type="password" />
-        <button type="submit">Sign UP</button>
+        <input name="email" type="email" placeholder="email" />
+        <input name="password" type="password" placeholder="password" />
+        <input name="password_confirmation" type="password" placeholder="confirm password" />
+        <button type="submit">Sign Up</button>
       </form>
     </div>
   );
