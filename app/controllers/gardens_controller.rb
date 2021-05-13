@@ -1,5 +1,5 @@
 class GardensController < ApplicationController
-  before_action :set_garden, only: [:show, :update, :destroy]
+  before_action :set_garden, only: %i[show update destroy]
 
   # GET /gardens
   def index
@@ -15,8 +15,11 @@ class GardensController < ApplicationController
 
   # POST /gardens
   def create
+    puts 'CURRENT USER'
+    puts current_user
     @garden = Garden.new(garden_params)
-
+    @garden.user = current_user
+    # this is the logged in user
     if @garden.save
       render json: @garden, status: :created, location: @garden
     else
@@ -39,13 +42,14 @@ class GardensController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_garden
-      @garden = Garden.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def garden_params
-      params.require(:garden).permit(:name, :location, :address, :user_id)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_garden
+    @garden = Garden.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def garden_params
+    params.require(:garden).permit(:name, :location, :address, :image_url, :user_id)
+  end
 end
