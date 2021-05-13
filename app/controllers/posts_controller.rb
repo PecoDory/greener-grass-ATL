@@ -17,7 +17,8 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.user = current_user
-    @post.garden = params[:id]
+    @post.garden = Garden.find(params[:garden_id])
+    
     if @post.save
       render json: @post, status: :created
     else
