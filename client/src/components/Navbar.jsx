@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <div>
-      <h1>Nav</h1>
+      <Link to="/gardens/new">
+        <button>Post Garden</button>
+      </Link>
+      
     </div>
-  )
+  );
 }

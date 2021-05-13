@@ -16,8 +16,8 @@ export const getGardenById = async (id) => {
   return res.data;
 };
 
-export const createTour = async (tour) => {
-  let res = await api.post("/gardens", tour);
+export const createGarden = async (garden) => {
+  let res = await api.post("/gardens", garden);
   return res.data;
 };
 
