@@ -3,7 +3,7 @@ class PostsController < ApplicationController
 
   # GET /posts
   def index
-    @posts = Post.all
+    @posts = Garden.find(params[:garden_id]).posts
 
     render json: @posts
   end
