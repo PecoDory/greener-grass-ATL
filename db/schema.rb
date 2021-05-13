@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_09_020753) do
+ActiveRecord::Schema.define(version: 2021_05_12_223123) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "comments", force: :cascade do |t|
-    t.text "content", null:false
+    t.text "content"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -24,17 +24,18 @@ ActiveRecord::Schema.define(version: 2021_05_09_020753) do
   end
 
   create_table "gardens", force: :cascade do |t|
-    t.string "name", null:false
+    t.string "name"
     t.text "location"
     t.text "address"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "image_url"
     t.index ["user_id"], name: "index_gardens_on_user_id"
   end
 
   create_table "plants", force: :cascade do |t|
-    t.string "name", null:false
+    t.string "name"
     t.bigint "garden_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -42,8 +43,8 @@ ActiveRecord::Schema.define(version: 2021_05_09_020753) do
   end
 
   create_table "posts", force: :cascade do |t|
-    t.text "content", null:false
-    t.string "title", null: false 
+    t.text "content"
+    t.string "title"
     t.bigint "garden_id", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -53,7 +54,7 @@ ActiveRecord::Schema.define(version: 2021_05_09_020753) do
   end
 
   create_table "tags", force: :cascade do |t|
-    t.string "content", null:false
+    t.string "content"
     t.bigint "post_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

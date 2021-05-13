@@ -5,6 +5,8 @@ import {verifyUser} from "./services/auth"
 import SignUp from "./components/SignUp";
 import Login from "./components/Login";
 import Navbar from "./components/Navbar";
+import AllGardens from "./screens/AllGardens";
+import GardenDetails from "./screens/GardenDetail";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -22,8 +24,12 @@ function App() {
     <div className="App">
       <Navbar />
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/home">
+          <AllGardens/>
           <h1>Greener Grass ATL</h1>
+        </Route>
+        <Route path="/gardens/:id">
+          <GardenDetails />
         </Route>
         <Route path="/signup">
           <SignUp />
