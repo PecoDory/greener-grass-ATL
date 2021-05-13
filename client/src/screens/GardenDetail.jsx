@@ -35,7 +35,7 @@ export default function GardenDetails(props) {
       </h6>
       <img
         className="Garden-detail-img"
-        src={gardenDetails.img_url}
+        src={gardenDetails.image_url}
         alt={`${gardenDetails.name} Garden`}
       />
       {posts.map((post) => (
@@ -45,6 +45,8 @@ export default function GardenDetails(props) {
         </>
       )
       )}
+      <Link to={`${id}/edit`}><button>edit</button></Link>
+      <Link to={`${id}/posts/new`}><button>create post</button></Link>
     </div> 
   );
 }

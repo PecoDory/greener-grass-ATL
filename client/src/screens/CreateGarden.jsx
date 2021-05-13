@@ -1,6 +1,10 @@
 import { useState } from "react";
-import {createGarden} from "../services/gardens"
+import { createGarden } from "../services/gardens"
+import { useHistory } from "react-router-dom";
+
+
 export default function CreateGarden() {
+  const history = useHistory()
   let [gardenName, setGardenName] = useState("");
   let [gardenLocation, setGardenLocation] = useState("");
   let [gardenAddress, setGardenAddress] = useState("");
@@ -10,6 +14,7 @@ export default function CreateGarden() {
     e.preventDefault() 
     const garden = {name:gardenName, location:gardenLocation, address:gardenAddress, image_url:gardenImage}
     await createGarden(garden)
+    history.push("/home")
   }
 
 
@@ -34,6 +39,7 @@ export default function CreateGarden() {
           placeholder="Garden Img URL"
         />
         <button onClick={handleSubmit}>submit</button>
+        
       </form>
     </div>
   );

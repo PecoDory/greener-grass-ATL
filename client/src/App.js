@@ -8,6 +8,8 @@ import Navbar from "./components/Navbar";
 import AllGardens from "./screens/AllGardens";
 import GardenDetails from "./screens/GardenDetail";
 import CreateGarden from "./screens/CreateGarden";
+import EditGarden from "./screens/EditGarden";
+import CreatePost from "./screens/CreatePost";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -35,11 +37,15 @@ function App() {
         <Route exact path="/gardens/new">
           <CreateGarden />
         </Route>
-
         <Route exact path="/gardens/:id">
           <GardenDetails />
         </Route>
-
+        <Route exact path="/gardens/:id/edit">
+          <EditGarden />
+        </Route>
+        <Route exact path="/gardens/:id/posts/new/">
+          <CreatePost />
+        </Route>
         <Route path="/signup">
           <SignUp />
         </Route>

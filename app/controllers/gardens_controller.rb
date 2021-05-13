@@ -15,8 +15,6 @@ class GardensController < ApplicationController
 
   # POST /gardens
   def create
-    puts 'CURRENT USER'
-    puts current_user
     @garden = Garden.new(garden_params)
     @garden.user = current_user
     # this is the logged in user

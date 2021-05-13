@@ -21,12 +21,12 @@ export const createGarden = async (garden) => {
   return res.data;
 };
 
-export const updateTour = async (tour) => {
-  let res = await api.put(`/gardens/${tour._id}`, tour);
+export const editGarden = async (garden) => {
+  let res = await api.put(`/gardens/${garden.id}`, garden);
   return res.data;
 };
 
-export const deleteTour = async (id) => {
+export const deleteGarden = async (id) => {
   let res = await api.delete(`/gardens/${id}`);
   return res.data;
 };
