@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-import { useParams, Link, useHistory } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import { getGardenById, deleteGarden, editGarden } from "../services/gardens";
-
-
 
 export default function EditGarden() {
   const history = useHistory();
@@ -25,6 +23,11 @@ export default function EditGarden() {
     await editGarden(editedGarden);
     history.push("/home");
   };
+  const handleDelete = async () => {
+    await deleteGarden(id);
+    history.push("/home");
+  };
+
   const getGardenDetails = async () => {
     const garden = await getGardenById(id);
     setGardenName(garden.name);
@@ -61,6 +64,8 @@ export default function EditGarden() {
         />
         <button onClick={handleSubmit}>submit</button>
       </form>
+      <button onClick={handleDelete}>delete garden</button>
+
     </div>
   );
 }
