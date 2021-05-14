@@ -1,29 +1,28 @@
 import React, { useState } from "react";
 import { Link, useHistory, useParams } from "react-router-dom";
-import {createPost} from "../services/posts"
+import {createComment} from "../services/comments"
 import "./CSS/create-post.css"
 
-export default function CreatePost() {
-  const { id:gardenId } = useParams();
+export default function CreateComment() {
+  const { id, post_id } = useParams();
   const history = useHistory();
-  const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const post = {
-      title,
+    const comment = {
       content,
     };
-    await createPost(post, gardenId);
-    history.push(`/gardens/${gardenId}`);
+    await createComment(comment, id, post_id);
+    history.push(`/gardens/${id}/posts/${post_id}`);
   };
 
   return (
     <div>
+      <h1>Create Comment</h1>
       <form>
+
         <div className="create-post-body">
-        <input onChange={(e) => setTitle(e.target.value)} placeholder="title" />
         <input
           onChange={(e) => setContent(e.target.value)}
           placeholder="content"

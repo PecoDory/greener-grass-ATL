@@ -7,7 +7,7 @@ export default function Navbar() {
       <Link to="/gardens/new">
         <button>Post Garden</button>
       </Link>
-      
+      <Link to="/home"><button>Home</button></Link>
     </div>
   );
 }

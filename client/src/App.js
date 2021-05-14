@@ -10,8 +10,8 @@ import GardenDetails from "./screens/GardenDetail";
 import CreateGarden from "./screens/CreateGarden";
 import EditGarden from "./screens/EditGarden";
 import CreatePost from "./screens/CreatePost";
-import PostDetail from "./screens/PostDetail"
-
+import PostDetail from "./screens/PostDetail";
+import CreateComment from "./screens/CreateComment";
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
 
@@ -49,6 +49,9 @@ function App() {
         </Route>
         <Route exact path="/gardens/:id/posts/:post_id/">
           <PostDetail />
+        </Route>
+        <Route exact path="/gardens/:id/posts/:post_id/comments/new">
+          <CreateComment />
         </Route>
         <Route path="/signup">
           <SignUp />

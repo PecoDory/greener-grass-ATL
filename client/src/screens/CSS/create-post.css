@@ -1,0 +1,4 @@
+.create-post-body{
+  display:flex;
+  flex-direction: column;
+}

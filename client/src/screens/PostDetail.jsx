@@ -26,9 +26,6 @@ export default function PostDetails(props) {
     setPosts(data);
   };
   
-
-  
-     
   console.log(postDetails)
   console.log(comments)
   return (
@@ -47,8 +44,8 @@ export default function PostDetails(props) {
         </div>
       )
       )}
-      <Link to={`${id}/edit`}><button>edit</button></Link>
-      <Link to={`${id}/posts/new`}><button>create post</button></Link>
+      {/* <Link to={`${id}/edit`}><button>edit</button></Link> */}
+      <Link to={`/gardens/${id}/posts/${post_id}/comments/new`}><button>comment</button></Link>
     </div>
   );
 }
