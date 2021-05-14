@@ -3,7 +3,8 @@ class PlantsController < ApplicationController
 
   # GET /plants
   def index
-    @plants = Plant.all
+    @plants = Garden.find(params[:garden_id]).plants
+
 
     render json: @plants
   end

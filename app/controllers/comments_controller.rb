@@ -3,7 +3,7 @@ class CommentsController < ApplicationController
 
   # GET /comments
   def index
-    @comments = Comment.all
+    @comments = Post.find(params[:post_id]).comments
 
     render json: @comments
   end
@@ -16,6 +16,9 @@ class CommentsController < ApplicationController
   # POST /comments
   def create
     @comment = Comment.new(comment_params)
+    @comment.user = current_user
+    @comment.post = Post.find(params[:post_id])
+
 
     if @comment.save
       render json: @comment, status: :created
