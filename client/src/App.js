@@ -34,7 +34,6 @@ function App() {
         <Route exact path="/gardens">
           <AllGardens />
         </Route>
-
         <Route exact path="/gardens/new">
           <CreateGarden />
         </Route>

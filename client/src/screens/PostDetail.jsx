@@ -31,13 +31,12 @@ export default function PostDetails(props) {
   return (
     <div className="PostDetails">
       <h1 id="title">{postDetails.title}</h1>
-      <h4>content</h4>
       <p>
         {postDetails.content}
       </p>
       
         
-      <h4>comments</h4>
+      <h4>Replies</h4>
       {comments.map((comment) => (
         <div key={comment.id}>
         <p>{comment.content}</p>
