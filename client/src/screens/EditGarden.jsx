@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { getGardenById, deleteGarden, editGarden } from "../services/gardens";
+import "./CSS/create-post.css";
 
 export default function EditGarden() {
   const history = useHistory();
@@ -42,30 +43,31 @@ export default function EditGarden() {
   return (
     <div>
       <form>
-        <input
-          onChange={(e) => setGardenName(e.target.value)}
-          placeholder="Garden Name"
-          value={gardenName}
-        />
-        <input
-          onChange={(e) => setGardenLocation(e.target.value)}
-          placeholder="Garden Location"
-          value={gardenLocation}
-        />
-        <input
-          onChange={(e) => setGardenAddress(e.target.value)}
-          placeholder="Garden Address"
-          value={gardenAddress}
-        />
-        <input
-          onChange={(e) => setGardenImage(e.target.value)}
-          placeholder="Garden Img URL"
-          value={gardenImage}
-        />
-        <button onClick={handleSubmit}>submit</button>
+        <div className="create-post-body">
+          <input
+            onChange={(e) => setGardenName(e.target.value)}
+            placeholder="Garden Name"
+            value={gardenName}
+          />
+          <input
+            onChange={(e) => setGardenLocation(e.target.value)}
+            placeholder="Garden Location"
+            value={gardenLocation}
+          />
+          <input
+            onChange={(e) => setGardenAddress(e.target.value)}
+            placeholder="Garden Address"
+            value={gardenAddress}
+          />
+          <input
+            onChange={(e) => setGardenImage(e.target.value)}
+            placeholder="Garden Img URL"
+            value={gardenImage}
+          />
+          <button onClick={handleSubmit}>submit</button>
+        </div>
       </form>
       <button onClick={handleDelete}>delete garden</button>
-
     </div>
   );
 }
