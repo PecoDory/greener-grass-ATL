@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams, Link, useHistory } from "react-router-dom";
-import { editGarden } from "../services/gardens";
-import { getGardenById } from "../services/gardens";
+import { getGardenById, deleteGarden, editGarden } from "../services/gardens";
+
+
 
 export default function EditGarden() {
   const history = useHistory();

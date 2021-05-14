@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams, Link, useHistory } from "react-router-dom";
 import { getGardenById } from "../services/gardens";
 import { getPostsForGarden } from "../services/posts";
+import "./CSS/garden-detail.css" 
+
 
 export default function GardenDetails(props) {
   const { id } = useParams();
@@ -34,15 +36,14 @@ export default function GardenDetails(props) {
         {gardenDetails.location} {gardenDetails.address}
       </h6>
       <img
-        className="Garden-detail-img"
+        className="garden-detail-img"
         src={gardenDetails.image_url}
         alt={`${gardenDetails.name} Garden`}
       />
       {posts.map((post) => (
-        <>
-        <h2>{post.title}</h2>
-        <p>{post.content}</p>
-        </>
+        <div key={post.id}>
+        <Link to={`${id}/posts/${post.id}`}><h2>{post.title}</h2></Link>
+        </div>
       )
       )}
       <Link to={`${id}/edit`}><button>edit</button></Link>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { getAllGardens } from "../services/gardens";
 import { Link } from "react-router-dom";
-
+import "./CSS/all-gardens.css"
 export default function AllGardens(props) {
   const [gardens, setGardens] = useState([]);
 
@@ -26,7 +26,7 @@ export default function AllGardens(props) {
             <h5>
               {garden.location}, {garden.address}
             </h5>
-            <img className="gardensListImg" src={gardens.img_url} alt="" />
+            <img className="gardensListImg" src={garden.image_url} alt="" />
             <div className="showDetailsWrap">
               <Link id="showDetails" to={`/gardens/${garden.id}`}>show details</Link>
             </div> 
