@@ -18,7 +18,7 @@ export default function AllGardens(props) {
 
   return (
     <div className="gardenList">
-      <h1 className="sitename">Greener Grass ATL</h1>
+      <h1 className="sitename">Greener Grass A T L</h1>
       <h4>a community blog for Atlanta's growers!</h4>
       {gardens.map((garden, index) => {
         return (
