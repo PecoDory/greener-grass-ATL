@@ -1,4 +1,6 @@
 .sitename{
-  font-family: 'Yellowtail', cursive;
-  color: blueviolet;
+  font-family: 'Reenie Beanie', cursive;
+  color: rgb(70, 64, 155);
+  opacity: .6;
+  font: size 500px;
 }

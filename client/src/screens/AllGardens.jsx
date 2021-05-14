@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { getAllGardens } from "../services/gardens";
 import { Link } from "react-router-dom";
 import "./CSS/all-gardens.css"
+import "./CSS/home.css";
+
 export default function AllGardens(props) {
   const [gardens, setGardens] = useState([]);
 
@@ -16,7 +18,7 @@ export default function AllGardens(props) {
 
   return (
     <div className="gardenList">
-      <h1>Greener Grass ATL</h1>
+      <h1 className="sitename">Greener Grass ATL</h1>
       
       {gardens.map((garden, index) => {
         return (

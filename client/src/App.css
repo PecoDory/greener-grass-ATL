@@ -5,8 +5,10 @@ background-color: #C4F1BE;
 
 a{
   color: #463074;
+  opacity: .8;
 }
 
 .App {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
